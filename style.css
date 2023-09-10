@@ -1,71 +1,33 @@
-/* All pages (navigation, footer, and other s that are used in multiple pages) */
-element.style {
-    font-size: 50px;
-    color: #17d874;
-    padding-left: 470px;
-    padding-top: 50px;
-}
-*{
-    
-    color: 	#fdfdfd;
-    /* font-family: 'Lato', sans-serif; */
-    /* font-family: 'Baloo Paaji 2'; */
-    font-family: "Baloo Bhai 2", cursive;
-    background-color: #000000;
-}
-.balloo {
-    background-color: #17d874;
-}
-.nav {
-    margin-bottom: 200px;
-}
-.angle-color-black .fa-angle-right {
-    color: #000000;
-}
-.navbar-brand {
-    color: #fdfdfd;
-}
-#start {
-  background-color: #000000;
-}
-   
-section header {
-    background-image: url(https://www.photos-public-domain.com/wp-content/uploads/2018/07/sky-with-clouds-texture.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+/* All pages (navigation, footer, and other elements that are used in multiple pages) */
+* {
+    color: 	#000000;
+    font-family: 'Lato', sans-serif;
 }
 
 #covid-19-awareness {
     position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 1px solid #000000;
 }
- body {
-    font-size: 32px;
-    background-color: #000000;
- }
- a {
-    color: wheat;
- }
-
 #covid-19-awareness, #covid-19-awareness a, .fa-info-circle {
-    background-color: #63bac5;
+    background-color: #FF6347;
     color: white;
     text-align: center;
     font-weight: 600;
     letter-spacing: 1px;
 }
+#navbarToggler{
+    display: inline;
+}
 
 #covid-19-awareness a:hover {
-    font-weight: 600;
     text-decoration: none;
 }
 
 .fa-angle-right {
     margin-left: 10px;
-    color: #63bac5;
+    color: #FF6347;
     font-size: inherit;
 }
 
@@ -81,56 +43,45 @@ section header {
 #custom-nav-css {
     border-bottom: 1px solid #000000;
 }
-.text-centre {
-    margin-left: 500px;
-}
-.qwerty {
-    border: 2px solid white;
-}
-
-h1 {
-    margin-top: 40px;
-    margin-left: 16px;
-}
-h2  {
-    
-    margin-top: 100pxpx;
-    margin-left: 200px ;
-}
-img {
-    width: 700px;
-}
 
 .navbar-brand img {
     height: 33px;
     width: 33px;
 }
 
-#navbarToggler {
-    display: flex;
-}
-
 .mha-nav { 
-    color: #ffffff !important; /* !important had to be used as then the bootstrap stylings would take priority over the custom css stylings */
+    color: #000000 !important; /* !important had to be used as then the bootstrap stylings would take priority over the custom css stylings */
     font-weight: 600;
     font-family: 'Lato', sans-serif;
-    /* font-family: 'Baloo Paaji 2'; */
     font-size: 18px;
 }
 
 .mha-nav:hover, .mha-nav:hover span {
-    color: #2c28f1 !important; /* !important had to be used as then the bootstrap stylings would take priority over the custom css stylings */
+    color: #FF6347 !important; /* !important had to be used as then the bootstrap stylings would take priority over the custom css stylings */
 } 
 
 .mha-active, .mha-active span {
-    color: #2c28f1 !important; /* !important had to be used as then the bootstrap stylings would take priority over the custom css stylings */
+    color: #FF6347 !important; /* !important had to be used as then the bootstrap stylings would take priority over the custom css stylings */
 }
 
 a.mha-active:hover, a.mha-active:hover span { /* !important had to be used as then the bootstrap stylings would take priority over the custom css stylings */
-    color: #2c28f1 !important; /* little bit of a darker orange color to have the user notice a difference but still maintain aesthetic integrity */
+    color: #FF4500 !important; /* a little bit of a darker orange color to have the user notice a difference but still maintain aesthetic integrity */
 }
 
-
+.playlist {
+    float: center;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    background-color: darkorange;
+    overflow: scroll;
+  }
+  
+  .song {
+    font-family: "Arial", sans-serif;
+    color: white;
+    font-size: 20pt;
+  }
 #mha-navbar-right-space {
     padding-left: 10px;
     padding-right: 10px;
@@ -150,7 +101,7 @@ a.mha-active:hover, a.mha-active:hover span { /* !important had to be used as th
     font-size: 20px;
     font-weight: 500;
     color: #ffffff;
-    background-color: #63bac5;
+    background-color: #FF6347;
     border: 1px solid #000000;
     border-radius: 8px;
     width: 100%;
@@ -161,7 +112,7 @@ a.mha-active:hover, a.mha-active:hover span { /* !important had to be used as th
 }
 
 .get-started-button:hover {
-    background-color: #7874f1;
+    background-color: #FF4500;
     font-weight: 500;
 }
 
@@ -174,11 +125,11 @@ a.mha-active:hover, a.mha-active:hover span { /* !important had to be used as th
 
 .mha-get-started a:hover {
     text-decoration: none;
-    color: #2c28f1;
+    color: #FF6347;
 }
 
 .start-spreading-awareness {
-    color: #63bac5;
+    color: #FF6347;
     font-size: 24px; /* bigger size than the call out to grasp the viewer's attention */
     font-weight: 500;
 }
@@ -297,7 +248,7 @@ footer div {
 /* Extra small devices (phones) */
 @media only screen and (max-width:717px) {
     #custom-navbar-brand-mobile-responsiveness { 
-        font-size: 16px; /* smaller font for the text on small devices */
+        font-size: 16px; /* smaller font for the navbar-brand text on small devices */
     }
     #custom-navbar-brand-mobile-responsiveness img { /* a little of a smaller logo on small devices */
         height: 28px;
@@ -341,7 +292,7 @@ footer div {
     .fa-angle-right {
         margin-left: 8px; /* smaller margin to stay consistent with the size of the device */
     }
-    #covid-19-awareness .t {
+    #covid-19-awareness .fa-angle-right {
         margin-left: 5px;
     }
     .black-background {
@@ -367,25 +318,20 @@ footer div {
 
 /* Home page */
 .hero-text {
-    /* font-family: 'Baloo Paaji 2'; */
     font-size: 62px;
     margin-top: 62px;
     margin-bottom: 28px;
-    padding-left: 80px;
-    text-align: left;
+    text-align: center;
     font-weight: 600;
     text-decoration: none; /* needed to remove text decoration since they are links */
 }
 
 .hero-text div {
     margin-bottom: 40px;
-    padding-left: 550PX;
 }
 
 .mha-hero-underline {
     border-bottom: 3px solid #000000;
-    /* text-align: center; */
-    /* padding: 10PX; */
 }
 
 .hero-text a {
@@ -393,7 +339,7 @@ footer div {
 }
 
 .hero-text a:hover {
-    color: #2c28f1;
+    color: #FF6347;
     text-decoration: none;
 }
 
@@ -408,93 +354,11 @@ footer div {
     background: linear-gradient(#ffffff 50%, #030303 50%) /* the way to do this found in https://stackoverflow.com/questions/8541081/css-set-a-background-color-which-is-50-of-the-width-of-the-window */
 }
 
-/* .newimg img {
-    height: 10%;
-    width: 22%;
-    border: 1px solid blue;
-    align-items: flex-end;
-    
-
-} */
-*{
-    box-sizing: border-box;
-  }
-  .time {
-    float: middle;
-    width: 445px;
-    /* border: 3px solid #90d3f7; */
-    /* background-color: #90d3f7; */
-    text-align: center;
-    font-size: 43px;
-    height: 206px;
-    
-    /* border-radius: 10px; */
-    margin: 55px auto;
-    display: block;
-  }
-
-  .middle {
-    width: 300px;
-    border: 3px solid black;
-    float: left;
-    border-radius: 10px;
-    margin: auto;
-    display: block;
-  }
-  .right {
-    width: 300px;
-    border: 3px solid black;
-    float: right;
-    border-radius: 10px;
-    margin: auto;
-    display: block;
-  }
-  header {
-    /* border: 2px solid black; */
-    /* width: 75%; */
-    width: 1530px;
-    margin: 30px auto;
-    padding: 2px;
-    border-radius: 20px;
-    background-color: hsl(0, 0%, 100%);
-    /* background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fclouds.html&psig=AOvVaw2Besw6HqfL2PJqzcjuBCAP&ust=1663799156130000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCICTjf-0pPoCFQAAAAAdAAAAABAE); */
-  }
-  h3 {
-    /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
-    font-family: 'Kanit', sans-serif;
-    /* margin: 0%; */
-    padding-top: 17px;
-    text-align: center;
-    /* width: 50px; */
-    font-size: 56px;
-    fo
-    background-color: #000000;
-  }
-  .box{
-    font-size: 21px;
-    /* border: 4px solid black;
-    background-color: rgb(253, 253, 253);
-    margin: 4px 0px;
-    padding: 23px;
-    width: 33%;
-    display: inline-block; */
-    /* box-sizing: border-box; */
-  }
-.container{
-  width: 1200px;
-  /* margin: auto; */
-  display: inline-block;
-  margin: auto;
-  margin-left: 550px;
-}
-
-
 .hero-image img { 
-    width: 25%;
+    width: 85%;
     height: auto;
     border-radius: 5%;
     border: 1px solid #ffffff;
-    margin-top: 70px;
     /* specifications found in https://css-tricks.com/perfect-full-page-background-image/ but had to be altered 
     since the hero image is not a background image */
 }
@@ -513,8 +377,8 @@ footer div {
 }
 
 .content h1 {
-    font-size: 25px;
-    padding-left: 638px;
+    font-size: 50px;
+    padding-left: 50px;
     padding-right: 50px;
 }
 
@@ -531,7 +395,7 @@ footer div {
     margin-left: auto;
     margin-right: auto;
     background-color: #030303;
-    color: #63bac5;
+    color: #FF6347;
     padding-bottom: 96px;
     margin-bottom: 128px;
 }
@@ -569,7 +433,7 @@ footer div {
     width: 100%;
     position: relative;
     border-radius: 2%;
-    border: 4px solid #63bac5;
+    border: 4px solid #FF6347;
 }
 
 .depression-text, .anxiety-text, .ptsd-text {
@@ -613,7 +477,7 @@ footer div {
 }
 
 .depression-text a p, .anxiety-text a p, .ptsd-text a p {
-    color: #63bac5;
+    color: #FF6347;
 }
 
 .depression-text a:hover, .anxiety-text a:hover, .ptsd-text a:hover {
@@ -687,7 +551,7 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
 
 .newsletter-form form input[type=submit] {
     font-size: 16px;
-    background-color: #63bac5;
+    background-color: #FF6347;
     color: #ffffff;
     font-weight: 500;
     float: right;
@@ -767,7 +631,7 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     font-weight: 400;
     text-align: center;
     padding: 20px;
-    height: 150px; /* height had to be fixed so that the two side-by-side div s appear to have equal height */
+    height: 150px; /* height had to be fixed so that the two side-by-side div elements appear to have equal height */
     overflow: hidden;
 } 
 
@@ -776,7 +640,7 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     font-weight: 600;
     text-align: center;
     padding: 20px;
-    color: #63bac5;
+    color: #FF6347;
 }
 
 .call-emergency a:hover, .support-center a:hover {
@@ -1134,13 +998,13 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
 
 }
 
-/* Educate Yourself page */
+/* Motivational Quotes page */
 
-.educate-yourself-statistics {
+.Motivational Quotes-statistics {
     background-color: #ffffff;
 }
 
-.educate-yourself-statistics .statistics {
+.Motivational Quotes-statistics .statistics {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -1150,16 +1014,16 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     padding-top: 62px;
 }
 
-.educate-yourself-statistics .statistics div {
+.Motivational Quotes-statistics .statistics div {
     text-align: center;
     padding-bottom: 196px;
 }
 
-.educate-yourself-statistics .statistics div span {
-    color: #63bac5;
+.Motivational Quotes-statistics .statistics div span {
+    color: #FF6347;
 }
 
-.educate-yourself-call-to-action {
+.Motivational Quotes-call-to-action {
     background-color: #FF6347;
     width: 100%;
     font-family: 'Lato', sans-serif;
@@ -1206,17 +1070,17 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     color: #ffffff;
 }
 
-.educate-yourself-call-to-action .mha-get-started {
+.Motivational Quotes-call-to-action .mha-get-started {
     background-color: #FF6347;
     padding-bottom: 186px;
     margin-bottom: 0px;
 }
 
-.educate-yourself-call-to-action .mha-get-started a:hover {
+.Motivational Quotes-call-to-action .mha-get-started a:hover {
     color: #000000; /* set the color of the icon to white to match with the text */
 }
 
-.educate-yourself-call-to-action .get-started-button {
+.Motivational Quotes-call-to-action .get-started-button {
     color: #ffffff;
     background-color: #000000;
     border: 2px solid #ffffff;
@@ -1225,14 +1089,14 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     margin-bottom: 62px;
 }
 
-.educate-yourself-call-to-action .get-started-button:hover {
+.Motivational Quotes-call-to-action .get-started-button:hover {
     background-color: #ffffff;
     border-color: #000000;
     color: #000000;
     font-weight: 600; 
 }
 
-.educate-yourself-call-to-action .start-spreading-awareness, .educate-yourself-call-to-action .start-spreading-awareness:hover {
+.Motivational Quotes-call-to-action .start-spreading-awareness, .Motivational Quotes-call-to-action .start-spreading-awareness:hover {
     color: #000000;
     text-decoration: none;
     font-size: 30px; 
@@ -1240,19 +1104,19 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
 }
 
 .angle-color-black .fa-angle-right {
-    color: #000000; 
+    color: #000000; /* set the color of the icon to black to match with the text */
 }
 
 /* Extra small devices (phones) */
 @media only screen and (max-width:717px) {
-    .educate-yourself-statistics .statistics {
+    .Motivational Quotes-statistics .statistics {
         font-size: 32px;
         padding-top: 62px;
     }
-    .educate-yourself-statistics .statistics div {
+    .Motivational Quotes-statistics .statistics div {
         padding-bottom: 96px; /* 32px times 3 = 96px */
     }
-    .educate-yourself-call-to-action {
+    .Motivational Quotes-call-to-action {
         margin-top: 0px;
     }
     .textual-info {
@@ -1260,7 +1124,7 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
         width: 70%;
     }
     .textual-info h1 {
-        padding-top: 34px; /* 34px + 62px = 96px which is equal to the padding-bottom of .educate-yourself-statistics .statistics div */
+        padding-top: 34px; /* 34px + 62px = 96px which is equal to the padding-bottom of .Motivational Quotes-statistics .statistics div */
         font-size: 32px;
     }
     .textual-info p {
@@ -1273,31 +1137,31 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     .textual-info .fa-angle-right {
         margin-left: 5px; /* make sure the icon does not jump over to the next line */
     }
-    .educate-yourself-call-to-action .mha-get-started {
+    .Motivational Quotes-call-to-action .mha-get-started {
         padding-bottom: 62px;
     }
-    .educate-yourself-call-to-action .get-started-button {
+    .Motivational Quotes-call-to-action .get-started-button {
         font-size: 16px;
         margin-bottom: 32px;
     }
-    .educate-yourself-call-to-action .start-spreading-awareness, .educate-yourself-call-to-action .start-spreading-awareness:hover {
+    .Motivational Quotes-call-to-action .start-spreading-awareness, .Motivational Quotes-call-to-action .start-spreading-awareness:hover {
         font-size: 20px;
     }
 }
 
 /* Small devices (Tablets and landscape phones) */
 @media only screen and (min-width:718px) and (max-width: 992px) {
-    .educate-yourself-statistics .statistics {
+    .Motivational Quotes-statistics .statistics {
         font-size: 45px;
         padding-top: 62px;
     }
-    .educate-yourself-statistics .statistics:first-child {
+    .Motivational Quotes-statistics .statistics:first-child {
         padding-top: 45px;
     }
-    .educate-yourself-statistics .statistics div {
+    .Motivational Quotes-statistics .statistics div {
         padding-bottom: 135px;  /* 45px times 3 = 135px */
     }
-    .educate-yourself-call-to-action {
+    .Motivational Quotes-call-to-action {
         margin-top: 0px;
     }
     .textual-info {
@@ -1305,7 +1169,7 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
         width: 60%; 
     }
     .textual-info h1 {
-        padding-top: 70px; /* 70px + 65px = 135px which is the padding bottom of .educate-yourself-statistics .statistics div */
+        padding-top: 70px; /* 70px + 65px = 135px which is the padding bottom of .Motivational Quotes-statistics .statistics div */
         font-size: 45px;
     }
     .textual-info p {
@@ -1315,40 +1179,40 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
         margin-top: 45px;
         margin-bottom: 45px;
     }
-    .educate-yourself-call-to-action .mha-get-started {
+    .Motivational Quotes-call-to-action .mha-get-started {
         padding-bottom: 45px;
     }
-    .educate-yourself-call-to-action .get-started-button {
+    .Motivational Quotes-call-to-action .get-started-button {
         font-size: 18px;
         margin-bottom: 45px;
     }
-    .educate-yourself-call-to-action .start-spreading-awareness, .educate-yourself-call-to-action .start-spreading-awareness:hover {
+    .Motivational Quotes-call-to-action .start-spreading-awareness, .Motivational Quotes-call-to-action .start-spreading-awareness:hover {
         font-size: 24px;
     }
 }
 
 /* Large devices (Large desktops and laptops) */
 @media only screen and (min-width: 1824px) {
-    .educate-yourself-statistics .statistics {
+    .Motivational Quotes-statistics .statistics {
         width: 50%;
     }
     .textual-info {
         padding-top: 62px;
         width: 35%;
     }
-    .educate-yourself-call-to-action .mha-get-started {
+    .Motivational Quotes-call-to-action .mha-get-started {
         padding-bottom: 62px;
     }
 }
 
-/* Help Yourself page */ 
+/* Music page */ 
 
-#help-yourself-title {
+#Music-title {
     background-color: #030303;
     color: #ffffff;
 }
 
-#help-yourself-title div {
+#Music-title div {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -1359,13 +1223,13 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     color: #ffffff;
 }
 
-#help-yourself-looking-after-yourself, .main-header, .looking-after-description {
+#Music-looking-after-yourself, .main-header, .looking-after-description {
     background-color: #030303;
     text-align: center;
     color: #ffffff;
 }
 
-#help-yourself-looking-after-yourself {
+#Music-looking-after-yourself {
     padding-bottom: 124px;
 }
 
@@ -1392,7 +1256,7 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     margin-right: auto;
 }
 
-#help-yourself-looking-after-yourself img {
+#Music-looking-after-yourself img {
     margin-right: auto;
     margin-left: auto;
     width: 67%;
@@ -1401,16 +1265,16 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     margin-bottom: 124px;
 }
 
-#help-yourself-specific-disorders, #help-yourself-specific-disorders .main-header, #help-yourself-resources, #help-yourself-resources .main-header {
+#Music-specific-disorders, #Music-specific-disorders .main-header, #Music-resources, #Music-resources .main-header {
     padding-top: 124px;
     background-color: #ffffff;
 }
 
-#help-yourself-specific-disorders {
+#Music-specific-disorders {
     padding-bottom: 248px;
 }
 
-#help-yourself-specific-disorders .main-header, #help-yourself-resources .main-header { 
+#Music-specific-disorders .main-header, #Music-resources .main-header { 
      color: #000000;
      font-weight: 600;
      padding-bottom: 0px;
@@ -1437,12 +1301,12 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     padding-bottom: 24px;
 }
 
-#help-yourself-suicide-hotlines {
+#Music-suicide-hotlines {
     background-color: #030303;
     padding-bottom: 248px;
 }
 
-#help-yourself-suicide-hotlines .main-header {
+#Music-suicide-hotlines .main-header {
     padding-top: 248px;
 }
 
@@ -1511,11 +1375,11 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     text-decoration: none;
 }
 
-#help-yourself-resources {
+#Music-resources {
     padding-bottom: 96px;
 }
 
-.help-yourself-resources-title {
+.Music-resources-title {
     font-size: 32px;
     margin-left: auto;
     margin-right: auto;
@@ -1525,12 +1389,12 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     padding-top: 62px;
 }
 
-.help-yourself-resources-videos {
+.Music-resources-videos {
     margin-top: -32px;
     padding-bottom: 96px;
 }
 
-.help-yourself-resources-videos iframe, .help-yourself-resources-articles iframe {
+.Music-resources-videos iframe, .Music-resources-articles iframe {
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -1538,27 +1402,27 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     margin-top: 96px;
 }
 
-.help-yourself-resources-videos iframe {
+.Music-resources-videos iframe {
     width: 67%;
     height: 480px;
     border: none;
 }
 
-.help-yourself-resources-articles {
+.Music-resources-articles {
     margin-bottom: 62px;
 }
 
-.help-yourself-resources-articles iframe {
+.Music-resources-articles iframe {
     width: 85%;
     height: 500px;
     border: 2px solid #000000;
 }
 
-.help-yourself-resources-links {
+.Music-resources-links {
     padding-top: 62px;
 }
 
-.help-yourself-resources-links a {
+.Music-resources-links a {
     display: block;
     width: 50%;
     margin-left: auto;
@@ -1569,23 +1433,23 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     text-align: center;
 }
 
-.help-yourself-resources-links a:hover {
+.Music-resources-links a:hover {
     text-decoration: none;
     color: #49A4D5;
 }
 
-.help-yourself-resources-links .fa-angle-right {
+.Music-resources-links .fa-angle-right {
     color: #49A4D5; /* the color of the icon should match the color of the text */
 }
 
 /* Extra small devices (phones) */
 @media only screen and (max-width:717px) {
-    #help-yourself-title div {
+    #Music-title div {
         font-size: 32px;
         padding-top: 32px;
         padding-bottom: 32px;
     }
-    #help-yourself-looking-after-yourself {
+    #Music-looking-after-yourself {
         padding-bottom: 62px;
     }
     .main-header {
@@ -1600,13 +1464,13 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
         font-size: 16px;
         padding-bottom: 62px;
     }
-    #help-yourself-looking-after-yourself img {
+    #Music-looking-after-yourself img {
         margin-bottom: 62px;
     }
-    #help-yourself-specific-disorders, #help-yourself-specific-disorders .main-header, #help-yourself-resources .main-header {
+    #Music-specific-disorders, #Music-specific-disorders .main-header, #Music-resources .main-header {
         padding-top: 62px;
     }
-    #help-yourself-specific-disorders {
+    #Music-specific-disorders {
         padding-bottom: 62px;
     }
     .specific-disorder-header, .specific-disorder-tip {
@@ -1621,10 +1485,10 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
         font-size: 16px;
         padding-bottom: 16px;
     }
-    #help-yourself-suicide-hotlines {
+    #Music-suicide-hotlines {
         padding-bottom: 62px;
     }
-    #help-yourself-suicide-hotlines .main-header {
+    #Music-suicide-hotlines .main-header {
         padding-top: 62px;
     }
     .suicide-hotlines-body {
@@ -1654,29 +1518,29 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
         word-wrap: break-word;
         letter-spacing: 0px;
     }
-    #help-yourself-resources {
+    #Music-resources {
         padding-bottom: 20px;
         padding-top: 0px;
     }
-    .help-yourself-resources-title {
+    .Music-resources-title {
         font-size: 18px;
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .help-yourself-resources-videos {
+    .Music-resources-videos {
         padding-bottom: 0px;
     }
-    .help-yourself-resources-videos iframe {
+    .Music-resources-videos iframe {
         margin-top: 30px;
         height: 200px;
     }
     #media-display-none {
         display: none;
     }
-    .help-yourself-resources-articles iframe {
+    .Music-resources-articles iframe {
         display: none; /* the article does not look good on mobile so the options of its ommitance was selected  */
     }
-    .help-yourself-resources-links {
+    .Music-resources-links {
         padding-bottom: 30px;
     }
     #mobile-special-padding { /* for unidentified reasons the top- and bottom-padding for the "External Links" title was off */
@@ -1685,7 +1549,7 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
         margin-top: -10px;
         margin-bottom: -30px;
     }
-    .help-yourself-resources-links a {
+    .Music-resources-links a {
         font-size: 16px;
         padding-bottom: 30px;
     }
@@ -1693,12 +1557,12 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
 
 /* Small devices (Tablets and landscape phones) */
 @media only screen and (min-width:718px) and (max-width:992px) {
-    #help-yourself-title div {
+    #Music-title div {
         font-size: 45px;
         padding-top: 45px;
         padding-bottom: 45px;
     }
-    #help-yourself-looking-after-yourself {
+    #Music-looking-after-yourself {
         padding-bottom: 45px;
     }
     .main-header {
@@ -1713,16 +1577,16 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
         font-size: 20px;
         padding-bottom: 45px;
     }
-    #help-yourself-looking-after-yourself img {
+    #Music-looking-after-yourself img {
         margin-bottom: 90px;
     }
-    #help-yourself-specific-disorders {
+    #Music-specific-disorders {
         padding-top: 45px;
     }
-    #help-yourself-specific-disorders .main-header, #help-yourself-resources .main-header {
+    #Music-specific-disorders .main-header, #Music-resources .main-header {
         padding-top: 45px;
     }
-    #help-yourself-specific-disorders {
+    #Music-specific-disorders {
         padding-bottom: 90px;
     }
     .specific-disorder-header, .specific-disorder-tip {
@@ -1737,10 +1601,10 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
         font-size: 20px;
         padding-bottom: 20px;
     }
-    #help-yourself-suicide-hotlines {
+    #Music-suicide-hotlines {
         padding-bottom: 90px;
     }
-    #help-yourself-suicide-hotlines .main-header {
+    #Music-suicide-hotlines .main-header {
         padding-top: 90px;
     }
     .suicide-hotlines-body {
@@ -1771,33 +1635,33 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
         letter-spacing: 0px;
         word-wrap: break-word;
     }
-    #help-yourself-resources {
+    #Music-resources {
         padding-bottom: 30px;
         padding-top: 45px;
     }
-    .help-yourself-resources-title {
+    .Music-resources-title {
         font-size: 26px;
         padding-top: 45px;
         padding-bottom: 45px;
     }
-    .help-yourself-resources-videos {
+    .Music-resources-videos {
         padding-bottom: 0px;
     }
-    .help-yourself-resources-videos iframe {
+    .Music-resources-videos iframe {
         margin-top: 45px;
         height: 400px;
     }
     #media-display-none {
         display: none;
     }
-    .help-yourself-resources-articles iframe {
+    .Music-resources-articles iframe {
         display: none; /* the tablet width and height do not allow for good article functionality */
     }
-    .help-yourself-resources-links {
+    .Music-resources-links {
         padding-top: 0px;
         padding-bottom: 0px;
     }
-    .help-yourself-resources-links a {
+    .Music-resources-links a {
         font-size: 20px;
         padding-bottom: 45px;
     }
@@ -1805,63 +1669,63 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
 
 /* Medium devices (Large tablets and small laptops) */
 @media only screen and (min-width:993px) and (max-width:1310px) {
-    #help-yourself-title div {
+    #Music-title div {
         padding-bottom: 62px;
     }
-    #help-yourself-looking-after-yourself {
+    #Music-looking-after-yourself {
         padding-bottom: 62px;
     }
-    #help-yourself-specific-disorders {
+    #Music-specific-disorders {
         padding-top: 0px;
         padding-bottom: 124px;
     }
-    #help-yourself-suicide-hotlines {
+    #Music-suicide-hotlines {
         padding-bottom: 124px;
     }
-    #help-yourself-suicide-hotlines .main-header {
+    #Music-suicide-hotlines .main-header {
         padding-top: 124px;
     }
-    #help-yourself-resources {
+    #Music-resources {
         padding-bottom: 62px;
     }
-    #help-yourself-resources .main-header {
+    #Music-resources .main-header {
         padding-top: 0px;
     }
-    .help-yourself-resources-title {
+    .Music-resources-title {
         padding-top: 32px;
     }
-    .help-yourself-resources-videos {
+    .Music-resources-videos {
         padding-bottom: 0px;
     }
     #media-display-none {
         display: none;
     }
-    .help-yourself-resources-articles iframe {
+    .Music-resources-articles iframe {
         display: none; /* the width and height do not allow for good article functionality */
     }
 }
 
 /* Large devices (Large desktops and laptops) */
 @media only screen and (min-width: 1824px) {
-    #help-yourself-title div, .main-header {
+    #Music-title div, .main-header {
         width: 50%;
     }
-    #help-yourself-title div {
+    #Music-title div {
         padding-bottom: 62px;
     }
-    #help-yourself-suicide-hotlines .main-header {
+    #Music-suicide-hotlines .main-header {
         padding-top: 124px;
     }
-    .looking-after-description, #help-yourself-looking-after-yourself img {
+    .looking-after-description, #Music-looking-after-yourself img {
         width: 40%;
     }
-    #help-yourself-looking-after-yourself {
+    #Music-looking-after-yourself {
         padding-bottom: 62px;
     }
-    #help-yourself-specific-disorders, #help-yourself-specific-disorders .main-header, #help-yourself-resources, #help-yourself-resources .main-header {
+    #Music-specific-disorders, #Music-specific-disorders .main-header, #Music-resources, #Music-resources .main-header {
         padding-top: 62px;
     }
-    #help-yourself-specific-disorders {
+    #Music-specific-disorders {
         padding-bottom: 124px;
     }
     .specific-disorder-header, .specific-disorder-tip {
@@ -1870,22 +1734,22 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     .suicide-hotlines-body {
         height: 1000px;
     }
-    .help-yourself-resources-videos iframe {
+    .Music-resources-videos iframe {
         height: 750px;
         width: 65%;
     }
-    .help-yourself-resources-articles iframe {
+    .Music-resources-articles iframe {
         height: 1250px;
         width: 70%;
     }
-    .help-yourself-resources-links a {
+    .Music-resources-links a {
         width: 35%;
     }
 }
 
-/* Help Others page */
+/* Activities page */
 
-.help-others-title {
+.Activities-title {
     margin-top: 62px;
     text-align: center;
     font-size: 62px;
@@ -1895,21 +1759,21 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     margin-bottom: 124px;
 }
 
-.help-others-title div {
+.Activities-title div {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.help-others-acquaintance-struggling {
+.Activities-acquaintance-struggling {
     margin-bottom: 0px;
 }
 
-.help-others-row-one, .help-others-row-two, .help-others-row-three, .help-others-row-four {
+.Activities-row-one, .Activities-row-two, .Activities-row-three, .Activities-row-four {
     height: 800px;
 }
 
-.help-others-portion-left {
+.Activities-portion-left {
     float: left;
     width: 50%;
     text-align: center;
@@ -1917,7 +1781,7 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     overflow: auto;
 }
 
-.help-others-portion-right {
+.Activities-portion-right {
     float: right;
     width: 50%;
     text-align: center;
@@ -1955,14 +1819,14 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     margin-right: auto;
     height: 250px;
     overflow: hidden; /* change the height settings for .portion-body, .portion-heading and 
-    .help-others-portion-left & -right in other screen sizes*/
+    .Activities-portion-left & -right in other screen sizes*/
 }
 
-.help-others-big-image {
+.Activities-big-image {
     margin-bottom: 124px;
 }
 
-.help-others-big-image img {
+.Activities-big-image img {
     width: 85%;
     height: auto;
     border-radius: 5%;
@@ -1971,11 +1835,11 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     display: block;
 }
 
-.help-others-tips {
+.Activities-tips {
     margin-bottom: 62px;
 }
 
-.help-others-tips div {
+.Activities-tips div {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -1985,30 +1849,22 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     padding-bottom: 80px;
 }
 
-.help-others-tips a, .help-others-tips a:hover {
+.Activities-tips a, .Activities-tips a:hover {
     color: #FF6347;
     text-decoration: none;
 }
 
-.w3-wide w3-center {
-    font-size: 100px;
-}
-
-.dl, .ol, .ul {
-    font-size: 50px;
-}
-
 /* Extra small devices (phones) */
 @media only screen and (max-width:717px) {
-    .help-others-title {
+    .Activities-title {
         font-size: 32px;
         margin-top: 32px;
         margin-bottom: 62px;
     }
-    .help-others-row-one, .help-others-row-two, .help-others-row-three, .help-others-row-four {
+    .Activities-row-one, .Activities-row-two, .Activities-row-three, .Activities-row-four {
         height: auto;
     }
-    .help-others-portion-left, .help-others-portion-right {
+    .Activities-portion-left, .Activities-portion-right {
         float: none;
         width: 75%;
         margin-left: auto;
@@ -2033,17 +1889,17 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
         font-size: 16px;
         height: auto;
     }
-    .help-others-big-image {
+    .Activities-big-image {
         margin-bottom: 62px;
     }
-    .help-others-big-image img {
+    .Activities-big-image img {
         width: 100%;
         border-radius: 0%;
     }
-    .help-others-tips {
+    .Activities-tips {
         margin-bottom: 32px;
     }
-    .help-others-tips div {
+    .Activities-tips div {
         font-size: 20px;
         padding-bottom: 40px;
     }
@@ -2051,18 +1907,18 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
 
 /* Small devices (Tablets and landscape phones) */
 @media only screen and (min-width:718px) and (max-width:992px) {
-    .help-others-title {
+    .Activities-title {
         font-size: 45px;
         margin-top: 45px;
         margin-bottom: 45px;
     }
-    .help-others-acquaintance-struggling {
+    .Activities-acquaintance-struggling {
         margin-bottom: 600px;
     }
-    .help-others-row-one, .help-others-row-two, .help-others-row-three, .help-others-row-four {
+    .Activities-row-one, .Activities-row-two, .Activities-row-three, .Activities-row-four {
         height: 500px;
     }
-    .help-others-portion-left, .help-others-portion-right {
+    .Activities-portion-left, .Activities-portion-right {
         margin-bottom: 18px;
     }
     .portion-img {
@@ -2077,14 +1933,14 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
         font-size: 20px;
         height: 275px;
     }
-    .help-others-big-image {
+    .Activities-big-image {
         margin-top: 45px;
         margin-bottom: 90px;
     }
-    .help-others-tips {
+    .Activities-tips {
         margin-bottom: 45px;
     }
-    .help-others-tips div {
+    .Activities-tips div {
         font-size: 30px;
         padding-bottom: 60px;
         width: 67%;
@@ -2093,29 +1949,29 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
 
 /* Large devices (Large desktops and laptops) */
 @media only screen and (min-width: 1824px) {
-    .help-others-title div {
+    .Activities-title div {
         width: 60%;
     }
-    .help-others-acquaintance-struggling {
+    .Activities-acquaintance-struggling {
         width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
-    .help-others-big-image {
+    .Activities-big-image {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
     }
-    .help-others-tips {
+    .Activities-tips {
         width: 75%;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-/* Spread the Word page */ 
+/* Blogspot page */ 
 
-.spread-the-word-title {
+.Blogspot-title {
     background-color: #ffffff;
     color: #000000;
     text-align: center;
@@ -2125,26 +1981,26 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     margin-bottom: 30px;
 }
 
-.spread-the-word-title div {
+.Blogspot-title div {
     width: 75%;
     padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.spread-the-word-title div span {
+.Blogspot-title div span {
     color: #FF6347; 
 }
 
-.spread-the-word-full-image-white-to-black {
+.Blogspot-full-image-white-to-black {
     background: linear-gradient(#ffffff 50%, #030303 50%)
 }
 
-.spread-the-word-full-image-black-to-white {
+.Blogspot-full-image-black-to-white {
     background: linear-gradient(#030303 50%, #ffffff 50%)
 }
 
-.spread-the-word-full-image-white-to-black img, .spread-the-word-full-image-black-to-white img {
+.Blogspot-full-image-white-to-black img, .Blogspot-full-image-black-to-white img {
     width: 85%;
     height: auto;
     display: block;
@@ -2318,15 +2174,15 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
 
 /* Extra small devices (phones) */
 @media only screen and (max-width:717px) {
-    .spread-the-word-title {
+    .Blogspot-title {
         font-size: 32px;
         margin-top: 32px;
         margin-bottom: 32px;
     }
-    .spread-the-word-title div {
+    .Blogspot-title div {
         padding-bottom: 32px;
     }
-    .spread-the-word-full-image-black-to-white img, .spread-the-word-full-image-white-to-black img {
+    .Blogspot-full-image-black-to-white img, .Blogspot-full-image-white-to-black img {
         width: 100%;
         border-radius: 0%;
     }
@@ -2407,12 +2263,12 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
 
 /* Small devices (Tablets and landscape phones) */
 @media only screen and (min-width:718px) and (max-width:992px) {
-    .spread-the-word-title {
+    .Blogspot-title {
         font-size: 45px;
         margin-top: 45px;
         margin-bottom: 45px;
     }
-    .spread-the-word-title div {
+    .Blogspot-title div {
         padding-bottom: 45px;
     }
     .talking-mental-health-reasons {
@@ -2482,10 +2338,10 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
 
 /* Large devices (Large desktops and laptops) */
 @media only screen and (min-width: 1824px) {
-    .spread-the-word-title div, .talking-heading, .stigma-heading, .suicide-week-heading {
+    .Blogspot-title div, .talking-heading, .stigma-heading, .suicide-week-heading {
         width: 60%;
     }
-    .spread-the-word-full-image-black-to-white img, .spread-the-word-full-image-white-to-black img, .talking-point, .talking-description, .world-mental-health-day-heading {
+    .Blogspot-full-image-black-to-white img, .Blogspot-full-image-white-to-black img, .talking-point, .talking-description, .world-mental-health-day-heading {
         width: 40%;
     } 
     .stigma-tip, .shop-heading {
@@ -2501,14 +2357,14 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     }
 }
 
-/* Sign In page + Sign Up page */
+/* Hotline page + Additional Resources page */
 
-.sign-in-page, .sign-up-page {
+.Hotline-page, .Additional Resources-page {
     margin-top: 62px;
     margin-bottom: 62px;
 }
 
-.sign-in, .sign-up {
+.Hotline, .Additional Resources {
     text-align: center;
     width: 50%;
     padding-bottom: 62px;
@@ -2517,27 +2373,27 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     color: #ffffff;
 }
 
-.sign-in-logo, .sign-up-logo {
+.Hotline-logo, .Additional Resources-logo {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
 }
 
-.sign-in-logo img, .sign-up-logo img {
+.Hotline-logo img, .Additional Resources-logo img {
     height: 80px;
     width: 80px;
 }
 
-.sign-in-form, .sign-up-form {
+.Hotline-form, .Additional Resources-form {
     padding-bottom: 40px;
 }
 
-.sign-in-form label, .sign-up-form label {
+.Hotline-form label, .Additional Resources-form label {
     display: none;
 }
 
-.sign-in-form input[type=password], .sign-in-form input[type=email], .sign-up-form input[type=text], 
-.sign-up-form input[type=password], .sign-up-form input[type=email] {
+.Hotline-form input[type=password], .Hotline-form input[type=email], .Additional Resources-form input[type=text], 
+.Additional Resources-form input[type=password], .Additional Resources-form input[type=email] {
     padding: 20px 10px;
     margin-bottom: 10px;
     width: 75%;
@@ -2547,7 +2403,7 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     border: 2px solid #000000;
 }
 
-.sign-in-form input[type=submit], .sign-up-form input[type=submit] {
+.Hotline-form input[type=submit], .Additional Resources-form input[type=submit] {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -2559,202 +2415,202 @@ textarea:focus, input:focus{  /* removes the blue border that appears when the e
     padding: 16px 10px;
 }
 
-.sign-in-form input[type=submit] {
+.Hotline-form input[type=submit] {
     margin-top: 10px;
 }
 
-.sign-up-form input[type=submit] {
+.Additional Resources-form input[type=submit] {
     margin-top: 30px;
 }
 
-.sign-in-form input[type=submit]:hover, .sign-up-form input[type=submit]:hover {
+.Hotline-form input[type=submit]:hover, .Additional Resources-form input[type=submit]:hover {
     background-color: #FF4500;
 }
 
-.sign-in-redirect, .sign-up-redirect, .sign-up-tos {
+.Hotline-redirect, .Additional Resources-redirect, .Additional Resources-tos {
     font-size: 17px;
 }
 
-.sign-up-tos {
+.Additional Resources-tos {
     margin-bottom: 20px;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.sign-up-tos span {
+.Additional Resources-tos span {
     font-weight: 600;
 }
 
-.sign-in-redirect a, .sign-in-redirect a:hover, .sign-up-redirect a, .sign-up-redirect a:hover {
+.Hotline-redirect a, .Hotline-redirect a:hover, .Additional Resources-redirect a, .Additional Resources-redirect a:hover {
     margin-left: 10px;
     color: #FF6347;
     text-decoration: none;
 }
 
-.sign-in-redirect .fa-angle-right, .sign-up-redirect .fa-angle-right {
+.Hotline-redirect .fa-angle-right, .Additional Resources-redirect .fa-angle-right {
     margin-left: 5px; /* smaller margins to accomodate the smaller font */
 }
 
 /* Extra small devices (phones) */
 @media only screen and (max-width:717px) {
-    .sign-in-page, .sign-up-page {
+    .Hotline-page, .Additional Resources-page {
         margin-top: 32px;
         margin-bottom: 32px;
     }
-    .sign-in, .sign-up {
+    .Hotline, .Additional Resources {
         width: 90%;
         padding-bottom: 32px;
     }
-    .sign-in-form input[type=password], .sign-in-form input[type=email], .sign-up-form input[type=text], 
-    .sign-up-form input[type=password], .sign-up-form input[type=email] {
+    .Hotline-form input[type=password], .Hotline-form input[type=email], .Additional Resources-form input[type=text], 
+    .Additional Resources-form input[type=password], .Additional Resources-form input[type=email] {
         font-size: 14px;
         width: 90%;
     }
-    .sign-in-form input[type=submit], .sign-up-form input[type=submit] {
+    .Hotline-form input[type=submit], .Additional Resources-form input[type=submit] {
         font-size: 14px;
         width: 40%;
         margin-top: 20px;
     }
-    .sign-in-redirect, .sign-up-redirect, .sign-up-tos {
+    .Hotline-redirect, .Additional Resources-redirect, .Additional Resources-tos {
         font-size: 15px;
     }
 }
 
 /* Small devices (Tablets and landscape phones) */
 @media only screen and (min-width:718px) and (max-width:992px) {
-    .sign-in-page { /* bigger margins are used for aesthetic purposes */
+    .Hotline-page { /* bigger margins are used for aesthetic purposes */
         margin-top: 135px;
         margin-bottom: 135px;
     }
-    .sign-up-page {
+    .Additional Resources-page {
         margin-top: 45px;
         margin-bottom: 45px;
     }
-    .sign-in, .sign-up {
+    .Hotline, .Additional Resources {
         width: 60%;
         padding-bottom: 45px;
     }
-    .sign-in-form input[type=password], .sign-in-form input[type=email], .sign-up-form input[type=text], 
-    .sign-up-form input[type=password], .sign-up-form input[type=email] {
+    .Hotline-form input[type=password], .Hotline-form input[type=email], .Additional Resources-form input[type=text], 
+    .Additional Resources-form input[type=password], .Additional Resources-form input[type=email] {
         font-size: 14px;
     }
-    .sign-in-form input[type=submit], .sign-up-form input[type=submit] {
+    .Hotline-form input[type=submit], .Additional Resources-form input[type=submit] {
         font-size: 14px;
         margin-top: 24px;
     }
-    .sign-in-redirect, .sign-up-redirect, .sign-up-tos {
+    .Hotline-redirect, .Additional Resources-redirect, .Additional Resources-tos {
         font-size: 16px;
     }
-    .sign-in-redirect .fa-angle-right, .sign-up-redirect .fa-angle-right {
+    .Hotline-redirect .fa-angle-right, .Additional Resources-redirect .fa-angle-right {
         margin-left: 5px; /* smaller margins to accomodate the smaller font and smaller device screen size */
     }
 }
 
 /* Large devices (Large desktops and laptops) */
 @media only screen and (min-width: 1824px) {
-    .sign-in-page, .sign-up-page {
+    .Hotline-page, .Additional Resources-page {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-/* @media queries with min-height settings to ensure the footer stays at the bottom of the sign-in and sign-up pages */
+/* @media queries with min-height settings to ensure the footer stays at the bottom of the Hotline and Additional Resources pages */
 @media only screen and (min-height:940px) {
-    .sign-in-page {
+    .Hotline-page {
         margin-top: 150px;
         margin-bottom: 150px;
     }
-    .sign-up-page {
+    .Additional Resources-page {
         margin-top: 100px;
         margin-bottom: 100px;
     }
 }
 
 @media only screen and (min-height:1110px) {
-    .sign-in-page {
+    .Hotline-page {
         margin-top: 200px;
         margin-bottom: 200px;
     }
-    .sign-up-page {
+    .Additional Resources-page {
         margin-top: 125px;
         margin-bottom: 125px;
     }
 }
 
 @media only screen and (min-height:1230px) {
-    .sign-in-page {
+    .Hotline-page {
         margin-top: 300px;
         margin-bottom: 300px;
     }
-    .sign-up-page {
+    .Additional Resources-page {
         margin-top: 180px;
         margin-bottom: 180px;
     }
 }
 
 @media only screen and (min-height:1430px) {
-    .sign-in-page {
+    .Hotline-page {
         margin-top: 400px;
         margin-bottom: 400px;
     }
-    .sign-up-page {
+    .Additional Resources-page {
         margin-top: 240px;
         margin-bottom: 240px;
     }
 }
 
 @media only screen and (min-height:1570px) {
-    .sign-in-page {
+    .Hotline-page {
         margin-top: 500px;
         margin-bottom: 500px;
     }
-    .sign-up-page {
+    .Additional Resources-page {
         margin-top: 300px;
         margin-bottom: 300px;
     }
 }
 
 @media only screen and (min-height:1760px) {
-    .sign-in-page {
+    .Hotline-page {
         margin-top: 600px;
         margin-bottom: 600px;
     }
-    .sign-up-page {
+    .Additional Resources-page {
         margin-top: 480px;
         margin-bottom: 480px;
     }
 }
 
 @media only screen and (min-height:2030px) {
-    .sign-in-page {
+    .Hotline-page {
         margin-top: 800px;
         margin-bottom: 800px;
     }
-    .sign-up-page {
+    .Additional Resources-page {
         margin-top: 640px;
         margin-bottom: 640px;
     }
 }
 
 @media only screen and (min-height:2430px) {
-    .sign-in-page {
+    .Hotline-page {
         margin-top: 1000px;
         margin-bottom: 1000px;
     }
-    .sign-up-page {
+    .Additional Resources-page {
         margin-top: 850px;
         margin-bottom: 850px;
     }
 }
 
 @media only screen and (min-height:2850px) {
-    .sign-in-page {
+    .Hotline-page {
         margin-top: 1400px;
         margin-bottom: 1400px;
     }
-    .sign-up-page {
+    .Additional Resources-page {
         margin-top: 1200px;
         margin-bottom: 1200px;
     }
